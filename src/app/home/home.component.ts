@@ -8,9 +8,9 @@ import { Signup } from './Signup';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
- private user : any ;
+ public user : any ;
  message : String ;
- private model : Signup = new Signup() ;
+ public model : Signup = new Signup() ;
  langs : String[] = ['fr' ,'ar' , 'eng'] ;
  @ViewChild('f') form : any  ;
  

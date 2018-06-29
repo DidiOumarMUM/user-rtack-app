@@ -32,11 +32,11 @@
 			       class="form-control"
 			       name="firstName"
 			       [(ngModel)]="model.firstName"
-			       required
+			     
 			       #firstName="ngModel">
 			<div class="form-control-feedback"
 			     *ngIf="firstName.errors && (firstName.dirty || firstName.touched)">
-				<p *ngIf="firstName.errors.required">First name is required</p>
+				
 			</div>
 		</div>
 
@@ -50,11 +50,11 @@
 			       class="form-control"
 			       name="lastName"
 			       [(ngModel)]="model.lastName"
-			       required
+			       
 			       #lastName="ngModel">
 			<div class="form-control-feedback"
 			     *ngIf="lastName.errors && (lastName.dirty || lastName.touched)">
-				<p *ngIf="lastName.errors.required">Last name is required</p>
+				
 			</div>
 		</div>
 	</fieldset>
@@ -70,13 +70,13 @@
 		       class="form-control"
 		       name="email"
 		       [(ngModel)]="model.email"
-		       required
-		       pattern="[^ @]*@[^ @]*"
+		  
+		    
 		       #email="ngModel">
 		<div class="form-control-feedback"
 		     *ngIf="email.errors && (email.dirty || email.touched)">
-			<p *ngIf="email.errors.required">Email is required</p>
-			<p *ngIf="email.errors.pattern">Email must contain at least the @ character</p>
+			
+			
 		</div>
 	</div>
 
@@ -91,13 +91,12 @@
 		       class="form-control"
 		       name="password"
 		       [(ngModel)]="model.password"
-		       required
-		       minlength="8"
+		     
 		       #password="ngModel">
 		<div class="form-control-feedback"
 		     *ngIf="password.errors && (password.dirty || password.touched)">
-			<p *ngIf="password.errors.required">Password is required</p>
-			<p *ngIf="password.errors.minlength">Password must be at least 8 characters long</p>
+			
+			
 		</div>
 	</div>
 
